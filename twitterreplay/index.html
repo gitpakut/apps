@@ -3,19 +3,23 @@
 <body class="container">
 	<h1 class="titleMain">Twitter実況リプレイ</h1>
 	<img class="imgFeature" src="./logo.png" alt="twitter実況リプレイ" width="100px" height="100px"/>
-	<p>
+	<div class="containerStoreLinks">
 		<a href="https://play.google.com/store/apps/details?id=com.smrpexpo.twitterreplay">
 			Google Play
 		</a>
-	</p>
-	<p>
 		<a href="https://apps.apple.com/us/app/id1566080699">
 			App Store
 		</a>
-	</p>
-	<a href="./privacy.html"><p>プライバシーポリシー</p></a>
-	<p>問い合わせ(developer): nagekonapps@gmail.com</p>
+	</div>
+
 	<div class="containerDescription">
+		<h2>概要</h2>
+		<p>
+			過去にツイッターに投稿された番組実況ツイート群を取得し、当時の様子をアプリ上でストリーミング風にプレイバック再生します。<br>
+			これにより、例えば録画番組の視聴時でも、リアルタイムで番組実況を見ているときと同じ体験をすることができます。<br><br>
+			
+			※番組実況ツイートの取得を想定していますが、検索キーワード次第でどんなツイートでも取得可能です。
+		</p>
 		<h2>スクリーンショット</h2>
 		<div class="containerSSs">
 			<div class="containerSS">
@@ -24,6 +28,12 @@
 			<div class="containerSS">	
 				<img src="./ss2.png" alt="スクリーンショット" />
 			</div>
+		</div>
+		<div>
+			<a href="./privacy.html">
+				<p>プライバシーポリシー</p>
+			</a>
+			<p>問い合わせ(developer): nagekonapps@gmail.com</p>
 		</div>
 	</div>
 
@@ -36,7 +46,18 @@
     justify-content: center;
     align-items: center;
 	}
+	.containerStoreLinks{
+		display: flex;
+		flex-direction: column;
+	}
+	.containerStoreLinks > *{
+		margin: 5px 0;
+	}
 	.containerSSs{
+		display: flex;
+    flex-direction: column;
+		justify-content: center;
+    align-items: center;
 	}
 	.containerSS{
 		width: 300px;
