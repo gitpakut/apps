@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html>
-<body>
-<div class="container">
-	<div class="containerApp">
-		<figure class="figureApp">
-			<a href="./twitterreplay/index.html">
-				<img class="imgFeature" src="./twitterreplay/myassets/images/feature.png" alt="twitter実況リプレイ" />
-				<figcaption class="captionApp">
-					<h2 class="apptitle">Twitter実況リプレイ</h2>
-				</figcaption>
-			</a>
-		</figure>
+	<body>
+		<div class="container">
+			<div class="containerApp">
+				<a href="./twitterreplay/index.html">
+					<figure class="figureApp" style="background-image: url(./twitterreplay/myassets/images/feature.png)">
+						<figcaption class="captionApp">
+							<h2 class="apptitle">Twitter実況リプレイ</h2>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="./rnggen/index.html">
+					<figure class="figureApp" style="background-image: url(./rnggen/myassets/images/icon.png)">
+						<figcaption class="captionApp">
+							<h2 class="apptitle">ランダム数字ジェネレーター</h2>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+		</div>
 
-
-	</div>
-</div>
-
-
-<style>
-	.container{
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-	}
-	.figureApp{
-		 position: relative;
-		 width: 70%;
-	}
-	.captionApp{
-   position: absolute;
-    bottom: 0;
-    color: #fff;
-    background: rgba(0,0,0,.6);
-    width: 100%;
-    padding: 1em 0;
-	}
-	.apptitle{
-		margin: 0;
-    font-size: 150%;
-    text-align: center;
-	}
-	.imgFeature{
-		width: 100%;
-	}
-</style>
-</body>
+		<style>
+			.containerApp {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			.containerApp > a {
+				display: block;
+				position: relative;
+				margin: 16px;
+				width: 80%;
+				height: 377px;
+			}
+			.figureApp {
+				position: relative;
+				height: 100%;
+				background-size: cover;
+				background-repeat: no-repeat; /*画像が繰り返すのを防ぐ*/
+			}
+			.captionApp {
+				position: absolute;
+				bottom: 0;
+				color: #fff;
+				background: rgba(0, 0, 0, 0.6);
+				width: 100%;
+				padding: 1em 0;
+			}
+			.apptitle {
+				margin: 0;
+				font-size: 150%;
+				text-align: center;
+			}
+			.imgFeature {
+				width: 100%;
+			}
+		</style>
+	</body>
 </html>
